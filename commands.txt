@@ -1,0 +1,15 @@
+conda create --prefix ./env pandas numpy matplotlib scikit-learn
+
+conda install jupyter
+
+conda env list
+
+conda activate C:\home\dev\machine_learning\sample_project\env
+
+jupyter notebook
+
+conda env export --prefix C:\home\dev\machine_learning\sample_project\env > environment.yml
+
+conda env create --file environment.yml --name env_from_file
+
+conda deactivate
